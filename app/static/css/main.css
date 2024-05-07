@@ -73,7 +73,8 @@ footer {
   display: flex;
 }
 
-#search-bar {
+
+  #search-bar {
   width: 95%;
   margin: 0 auto;
   height: 3rem;
@@ -84,6 +85,9 @@ footer {
   border: none !important;
   border-radius: 100px;
   padding: 0 0 0 15px;
+  color: white;
+  /* Körvonal vastagságának beállítása */
+  border-width: 0;
 }
 
 
