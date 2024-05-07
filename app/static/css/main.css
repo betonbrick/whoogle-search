@@ -1,6 +1,6 @@
-body {
+.body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1d1d1d; !important;
+    background-color: #0e0e0e;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,9 @@ body {
 
 .home-search {
     background: transparent !important;
-    border: 3px solid;
+    border: 2px solid #383838;
+    border-radius: 5px;
+    padding: 8px;
 }
 
 .search-container {
@@ -38,7 +40,7 @@ body {
     display: flex;
 }
 
-#search-bar {
+.search-bar {
     width: 45rem;
     height: 3rem;
     display: inline-flex;
@@ -46,9 +48,13 @@ body {
     white-space: nowrap;
     padding: 0 1.4rem 0.2rem 1.4rem;
     font-size: 24px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 10px; /* Módosítva */
+    color: #ffffff;
 }
 
-#search-submit {
+.search-submit {
     display: inline-flex;
     flex-direction: row;
     white-space: nowrap;
@@ -58,6 +64,10 @@ body {
     height: 3rem;
     font-size: 18px;
     justify-content: center;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
 .config-options {
@@ -88,6 +98,7 @@ button::-moz-focus-inner {
     outline: none;
     font-size: 15px;
     border-radius: 10px 10px 0 0;
+    color: #ffffff;
 }
 
 .collapsible:after {
@@ -95,6 +106,7 @@ button::-moz-focus-inner {
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    color: #ffffff;
 }
 
 .active:after {
@@ -107,6 +119,8 @@ button::-moz-focus-inner {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-radius: 0 0 10px 10px;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 .open {
@@ -117,7 +131,7 @@ button::-moz-focus-inner {
     display: none;
 }
 
-footer {
+.footer {
     position: fixed;
     bottom: 0%;
     text-align: center;
@@ -128,13 +142,18 @@ footer {
 .info-text {
     font-style: italic;
     font-size: 12px;
+    color: #ffffff;
 }
 
-#config-style {
+.config-style {
     resize: none;
     overflow-y: scroll;
     width: 100%;
     height: 100px;
+    background-color: #1e1e1e;
+    border: 2px solid #383838;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
 .whoogle-logo {
@@ -170,11 +189,14 @@ footer {
 .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
-details summary {
+.details-summary {
     padding: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 /* Mobile styles */
@@ -183,7 +205,8 @@ details summary {
         width: 100%;
     }
 
-    #search-bar {
+    .search-bar {
         font-size: 20px;
     }
 }
+
